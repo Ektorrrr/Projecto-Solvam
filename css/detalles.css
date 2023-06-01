@@ -1,0 +1,87 @@
+div {
+   
+}
+
+body {
+    background-color: beige;
+}
+
+div#contenedor {
+    width: 1170px;
+    margin: 0px auto;
+}
+
+div#imagen {
+    width: 570px;
+    height: 770px;
+    float: left;
+}
+#imagen img{
+    width: 570px;
+    height: 770px;
+}
+
+div#informacion {
+    width: 570px;
+    height: 770px;
+    float: right;
+}
+.encabezado {
+    margin-bottom: 20px;
+}
+
+.titulo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.subtitulo {
+    font-size: 16px;
+    color: #888888;
+}
+
+.descripcion {
+    margin-bottom: 10px;
+}
+
+.descripcion p {
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.detalles {
+    flex-wrap: wrap;
+}
+
+.detalles div {
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+.detalles h1 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.boton-volver{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #56ab2f;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+
+.boton-volver {
+    float: right;
+}
+
+.boton-volver:hover {
+    background-color: #1a330e;
+}

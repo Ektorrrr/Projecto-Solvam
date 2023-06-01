@@ -1,0 +1,131 @@
+body {
+    background-color: beige;
+    font-family: Arial, sans-serif;
+}
+
+#contenedor {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+#principal {
+    width: 783px;
+    float: left;
+    margin-top: 20px;
+}
+
+#lateral {
+    width: 383px;
+    float: right;
+}
+
+h1 {
+    text-align: center;
+}
+
+.informacion h1.titulo {
+    text-align: left;
+    font-size: 28px;
+    color: #333;
+}
+
+.informacion p {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    color: #666;
+}
+
+.formulario {
+    background-color: #f9f9f9;
+    padding: 40px;
+    padding-right: 100px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.campo {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+label {
+    display: none;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #555;
+}
+
+input[type="text"] {
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-size: 20px;
+}
+
+textarea {
+    height: 120px;
+}
+
+.icono-input {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.botones {
+    text-align: center;
+    margin-top: 20px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.datos-contacto {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.datos-contacto h1.titulo {
+    text-align: left;
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.datos-contacto p {
+    font-size: 16px;
+    color: #666;
+}
+
+.donde-estamos {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.donde-estamos h1.titulo {
+    text-align: left;
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+}

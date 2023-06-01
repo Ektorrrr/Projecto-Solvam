@@ -1,0 +1,216 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+}
+
+#contenedor {
+    width: 1000px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+}
+
+.izquierda {
+    flex: 3;
+}
+
+.noticias {
+    margin-bottom: 20px;
+    display: flex;
+    position: relative;
+    box-shadow: 0px 0px 5px 5px #90948e8e;
+    border-radius: 5px;
+}
+
+.imagen {
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    margin: 10px;
+    display: block;
+
+}
+
+.imagen img {
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+
+}
+
+div.informacion {
+    width: 500px;
+    display: block;
+    flex: 2;
+    margin: 10px;
+
+}
+
+
+.titulo h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+.descripcion p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+}
+
+.datos {
+    display: flex;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    margin-bottom: 10px;
+}
+
+
+.fecha p,
+.autor p,
+.categorias p,
+.visitas p {
+    font-size: 14px;
+    color: #888;
+    margin-right: 5px;
+}
+
+
+
+.derecha {
+    flex: 1;
+    margin-left: 20px;
+}
+
+#categoria h3,
+#popular h3,
+#more h3,
+#video h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.uno,
+.dos,
+.tres,
+.cuatro {
+    width: 100%;
+    height: 100px;
+    background-color: #eee;
+    margin-bottom: 10px;
+}
+
+#video iframe {
+    width: 100%;
+    height: 200px;
+    border: none;
+}
+
+.limpiar {
+    clear: both;
+}
+
+.mas_info .boton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #56ab2f;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.mas_info {
+    margin-top: 10px;
+}
+
+.mas_info .boton:hover {
+    background-color: #1a330e;
+}
+
+#popular {
+    box-shadow: 0px 0px 5px 5px #90948e8e;
+    border-radius: 5px;
+    padding: 5px;
+
+}
+
+#popular,
+#categoria,
+#more,
+#video {
+    margin-bottom: 30px;
+}
+
+.noticias_popular {
+    margin-bottom: 20px;
+    display: flex;
+    position: relative;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.imagen_popular {
+    border-radius: 5px;
+    margin: 10px;
+    display: block;
+
+}
+
+.imagen_popular img {
+    border-radius: 5px;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.noticias_popular::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -2px;
+    width: 80%;
+    height: 2px;
+    background-color: #56ab2f;
+    transform: translateX(-50%) scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.noticias_popular:hover::after {
+    transform: translateX(-50%) scaleX(1);
+}
+
+.noticias_popular:hover .titulo_popular a {
+    color: #56ab2f;
+}
+
+.noticias_popular .titulo_popular a {
+    text-decoration: none;
+    color: #000;
+    transition: color 0.3s ease-in-out;
+}
+
+
+/* Pie de página */
+/* Estilos del pie de página aquí */

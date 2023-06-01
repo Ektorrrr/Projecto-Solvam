@@ -1,0 +1,115 @@
+div#pie {
+    height: 300px;
+    width: 1170px;
+    position: absolute;
+    background-color: black;
+}
+
+div.pie1 {
+    width: 290px;
+    height: 250px;
+    position: relative;
+    display: block;
+    float: left;
+}
+
+div.pie2 {
+    width: 290px;
+    height: 250px;
+    position: relative;
+    display: block;
+    float: left;
+}
+
+div.pie3 {
+    width: 290px;
+    height: 250px;
+    position: relative;
+    display: block;
+    float: left;
+}
+
+div.pie4 {
+    width: 290px;
+    height: 250px;
+    position: relative;
+    display: block;
+    float: left;
+}
+
+div.pie1 h4 {
+    color: white;
+    text-align: center;
+    display: block;
+    position: absolute;
+    top: 40px;
+    left: 70px;
+}
+
+div.pie1>a {
+    height: 46px;
+    width: 254px;
+    display: block;
+    position: absolute;
+    bottom: 30px;
+    right: 20px;
+    float: left;
+    background-image: url("img/social-icons.png");
+}
+
+div.pie1>a:hover {
+    background-position: 0px -47px;
+}
+
+div.pie1 img {
+    position: absolute;
+    display: block;
+    bottom: 100px;
+    right: 60px;
+    width: 180px;
+    height: 80px;
+}
+
+div.pie2 #mapa iframe {
+    height: 190px;
+    width: 290px;
+    margin-right: 45px;
+    margin-top: 40px;
+}
+
+div.menu_final ul.horizontal2 {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    bottom: 0px;
+    position: relative;
+    float: right;
+}
+
+div.menu_final ul.horizontal2 li {
+    width: 100px;
+    height: 55px;
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+div.menu_final ul.horizontal2 li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    height: 20px;
+    padding: 10px 20px;
+
+}
+
+div.menu_final ul.horizontal2 li a:hover {
+    color: rgb(75, 97, 197);
+}
+
+div.pie4 iframe {
+    margin-right: 15px;
+    margin-top: 30px;
+}

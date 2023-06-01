@@ -1,0 +1,188 @@
+div {
+
+}
+
+body{
+  background-color: beige;  
+}
+div#encabezado{
+    background-color: #1a330e;
+}
+div#contenedor {
+    width: 1170px;
+    margin: 0px auto;
+}
+
+div#encabezado {
+    height: 55px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+div.logo {
+    width: 450px;
+    height: 55px;
+    float: left;
+    background-color: #1a330e;
+}
+div.logo img{
+    width: 160px;
+    height: 55px;
+}
+
+div.menu {
+    width: 700px;
+    height: 55px;
+    float: right;
+}
+
+p.limpiar {
+    clear: both;
+}
+
+div#galeria_imagenes {
+    height: 350px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+div.animacion {
+    height: 350px;
+    width: 750px;
+    float: left;
+    perspective: 1400px;
+}
+
+div.noticia_destacada {
+    height: 350px;
+    width: 400px;
+    float: right;
+}
+
+h2.titulo_presentacion {
+    font-family: Oswald, sans-serif;
+    text-transform: uppercase;
+    font-size: 24px;
+    text-shadow: 2px 2px #333;
+    line-height: 1.5;
+}
+
+div#carta,#carta1, #carta2, #carta3 {
+    width: 183px;
+    height: 350px;
+
+    margin: 0px auto;
+    transition: all .4s linear 0s;
+    transform-style: preserve-3d;
+    float: left;
+}
+
+div#carta:hover,#carta1:hover, #carta2:hover, #carta3:hover {
+    transform: rotateY(180deg);
+    transition: all .6s linear 0s;
+}
+
+div#carta div,#carta1 div, #carta2 div, #carta3 div{
+    width: 183px;
+    height: 350px;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+div.cara {
+    font-size: 100px;
+    text-align: center;
+    background-color: #1a330e;
+    color: white;
+    transform: rotateY(180deg);
+}
+div#contenido{
+    margin: 0px auto; padding: 0px;
+    width: 1170px;
+}
+
+div.noticia {
+    height: 300px;
+    width: 277px;
+    margin: 5px;
+    display: block;
+    position: relative;
+    float: left;
+    transition: all 2s;
+    line-height: 15px;
+    margin-top: 15px;
+    border-bottom: 1px solid grey;
+    border-bottom-style: dotted;
+    margin-bottom: 5px;
+}
+div.noticia img{
+    height: 220px;
+    width: 277px;
+    z-index: 20;
+}
+
+div.noticia:hover {
+    z-index: 2;
+    box-shadow: 0px 0px 15px 15px #56ab2f;
+    -webkit-box-shadow: 0px 0px 15px 15px #1a330e;
+    transform: scale(1.1);
+    transition-duration: 0.4s;
+    border-radius: 10px;
+}
+div.noticia:hover img{
+    transition-duration: 0.4s;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+div.noticia:not(:hover) {
+    transform: scale(1);
+    transition-duration: 0.4s;
+}
+
+div.noticia:not(:hover) img{
+    transition-duration: 0.4s;
+}
+
+div#lupa{
+    background-color: white;
+    background-image: url(../img/gallery-item-icons.png);
+    height: 42px;
+    width: 42px;
+    display: block;
+    float: right;
+    position: absolute;
+    bottom: 80px;
+    left: 193px;
+}
+div#detalles{
+    background-color: white;
+    background-image: url(../img/gallery-item-icons.png);
+    background-position: -42px 0px;
+    height: 42px;
+    width: 42px;
+    display: block;
+    float: right;
+    position: absolute;
+    bottom: 80px;
+    left: 235px;
+}
+div#lupa:hover{
+    background-color: #56ab2f;
+}
+
+div#detalles:hover{
+    background-color: #56a42f;
+}
+div#detalles:hover a{
+    height: 442px;
+    width: 42px;
+    margin: 0 auto;
+}
+.noticia p{
+    margin: 5px;
+}
+iframe{
+    width: 500px;
+    height: 500px;
+}

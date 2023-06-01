@@ -1,0 +1,103 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+#contenedor {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Estilos para la imagen */
+#imagen img {
+    display: block;
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+/* Estilos para la información */
+.encabezado {
+    margin-bottom: 20px;
+}
+
+.titulo {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.subtitulo {
+    font-size: 20px;
+    color: #666;
+    margin: 0;
+}
+
+.descripcion p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Estilos para los detalles */
+.detalles {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fecha,
+.autor,
+.categorias,
+.editor,
+.visitas {
+    width: 50%;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.fecha h1,
+.autor h1,
+.categorias h1,
+.editor h1,
+.visitas h1 {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+    color: #555;
+}
+
+.fecha p,
+.autor p,
+.categorias p,
+.editor p,
+.visitas p {
+    font-size: 14px;
+    margin: 0;
+    color: #777;
+}
+
+.boton-volver {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #56ab2f;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-top: 20px;
+    left: 0px;
+}
+
+.boton-volver:hover {
+    background-color: #1a330e;
+}
