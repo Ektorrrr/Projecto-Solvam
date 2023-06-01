@@ -21,7 +21,7 @@
         <div class="pie1">
             <h4>SOBRE NOSOTROS</h4>
             <img src="./img/social-icons.png" alt="logo">
-            <a href="#"></a>
+            <a href="./index.php"></a>
         </div>
         <div class="pie2">
             <div id="mapa">
