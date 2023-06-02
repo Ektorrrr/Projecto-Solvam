@@ -10,7 +10,11 @@ div#encabezado{
 }
 div#contenedor {
     width: 1170px;
-    margin: 0px auto;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 div#encabezado {

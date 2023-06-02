@@ -9,12 +9,18 @@ body {
 div#contenedor {
     width: 1170px;
     margin: 0px auto;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
 }
 
 div#imagen {
     width: 570px;
     height: 770px;
-    float: left;
+    flex: 1;
 }
 #imagen img{
     width: 570px;
@@ -24,7 +30,8 @@ div#imagen {
 div#informacion {
     width: 570px;
     height: 770px;
-    float: right;
+    flex: 2;
+    margin-left: 20px;
 }
 .encabezado {
     margin-bottom: 20px;

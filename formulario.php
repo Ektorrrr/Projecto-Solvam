@@ -18,10 +18,9 @@
 </head>
 
 <body>
-<?php include("./menu.php"); ?>
+    <?php include("./menu.php"); ?>
     <div id="contenedor">
-    
-
+        <p class="limpiar"></p>
         <div id="principal">
             <div class="informacion">
                 <h1 class="titulo">CONTACTA CON NOSOTROS...</h1>
@@ -76,6 +75,9 @@
             </div>
             <div class="donde-estamos">
                 <h1 class="titulo">DONDE ESTAMOS</h1>
+                <div id="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3079.74551930862!2d-0.4699789220475204!3d39.47507740885418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd60500d894f9e91%3A0x2ade32b7617ed30d!2sMancomunidad%20Intermunicipal%20Barrio%20del%20Cristo!5e0!3m2!1ses!2ses!4v1685691906148!5m2!1ses!2ses" width="100" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
         </div>
     </div>
