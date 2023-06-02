@@ -175,10 +175,15 @@ div#detalles:hover{
     background-color: #56a42f;
 }
 div#detalles:hover a{
-    height: 442px;
+    height: 42px;
     width: 42px;
     margin: 0 auto;
 }
+#detalles a{
+    display: block;
+    width: 42px; height: 42px;
+}
+
 .noticia p{
     margin: 5px;
 }

@@ -95,14 +95,47 @@ div.informacion {
     margin-left: 20px;
 }
 
-#categoria h3,
-#popular h3,
-#more h3,
-#video h3 {
-    font-size: 18px;
-    color: #333;
-    margin-bottom: 10px;
+#categoria {
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
 }
+
+#categoria h2 {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.categoria_listar {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.categoria_listar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border: 2px solid transparent;
+    border-radius: 3px;
+    transition: width 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    pointer-events: none;
+    /* Permite que los eventos del ratón pasen a través del pseudo-elemento */
+}
+
+.categoria_listar:hover::before {
+    width: 100%;
+    border-color: #56ab2f;
+}
+
+
 
 .uno,
 .dos,
@@ -211,6 +244,8 @@ a {
     transition: color 0.3s ease-in-out;
 }
 
-
+.boton-mostrar-todos:hover{
+    color: #56ab2f;
+}
 /* Pie de página */
 /* Estilos del pie de página aquí */

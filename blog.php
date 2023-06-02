@@ -1,18 +1,17 @@
 <?php include("./php/conexion.php");
 
-if (isset($_GET["id_articulo"])) {
-    $id_articulo = $_GET["id_articulo"];
+if (isset($_GET["id_categoria"])) {
+    $id_categoria = $_GET["id_categoria"];
     //si la url lleva la variable id_categoria, mostramos los libros de dicha categoría
-    $sql_detalles = $conexion->query("SELECT * FROM articulos WHERE id=$id_articulo");
+    $sql_detalles = $conexion->query("SELECT * FROM articulos WHERE id_categoria=$id_categoria");
 } else {
     //si no lleva la variable, mostramos todos los libros
     $sql_detalles = $conexion->query("SELECT * FROM articulos");
 }
 
-
 $most_popular = $conexion->query("SELECT * FROM articulos ORDER BY visitas DESC LIMIT 4");
 
-$categoria = $conexion->query("SELECT id_categoria FROM articulos AS a INNER JOIN categorias AS c ON a.id_categoria = c.id_categoria")
+$mostrar_categoria = $conexion->query("SELECT * FROM categorias");
 
 ?>
 
@@ -42,7 +41,7 @@ $categoria = $conexion->query("SELECT id_categoria FROM articulos AS a INNER JOI
                 $autor = $fila[4];
                 $fecha = $fila[5];
                 $visitas = $fila[8];
-                $categoria
+
             ?>
 
                 <div class="noticias">
@@ -99,11 +98,33 @@ $categoria = $conexion->query("SELECT id_categoria FROM articulos AS a INNER JOI
             <?php
             }
             ?>
+
+
+            <div class="mostrar-todos">
+                <a class="boton-mostrar-todos" href="./blog.php">Mostrar todos</a>
+            </div>
         </div>
         <div class="derecha">
             <div id="categoria">
                 <h3>CATEGORIAS</h3>
+                <?php
+                while ($fila = $mostrar_categoria->fetch_array()) {
+                    $id_categoria = $fila[0];
+                    $categoria = $fila[1];
 
+                ?>
+
+                    <div class="categoria_listar">
+                        <div class="titulo_categoria">
+                            <h2>
+                                <a href="./blog.php?id_categoria=<?php echo $id_categoria; ?>"><?php echo $categoria; ?></a>
+                            </h2>
+                        </div>
+                    </div>
+
+                <?php
+                }
+                ?>
             </div>
             <p class="limpiar"></p>
             <div id="popular">
