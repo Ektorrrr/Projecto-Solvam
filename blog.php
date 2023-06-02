@@ -30,6 +30,7 @@ $mostrar_categoria = $conexion->query("SELECT * FROM categorias");
     <?php include("./menu.php"); ?>
 
     <div id="contenedor">
+        
         <div class="izquierda">
             <?php
             while ($fila = $sql_detalles->fetch_array()) {
