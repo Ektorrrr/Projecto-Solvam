@@ -94,7 +94,7 @@ else {
                         <?php echo $categorias; ?>
                         </p>
                     </div>
-                    <div class="">
+                    <div class="editor">
                         <h1>
                             EDITOR:
                         </h1>
